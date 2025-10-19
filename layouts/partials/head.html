@@ -1,0 +1,91 @@
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- SEO Meta Tags -->
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ i18n "site_title" . }}</title>
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.site_description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.site_author }}">
+  <meta name="keywords" content="{{ .Site.Params.site_keywords | default "" }}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ i18n "site_title" . }}">
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.site_description }}{{ end }}">
+  <meta property="og:image" content="{{ "images/siteicon.png" | absURL }}">
+  <meta property="og:site_name" content="{{ i18n "site_title" . }}">
+  <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ i18n "site_title" . }}">
+  <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.site_description }}{{ end }}">
+  <meta property="twitter:image" content="{{ "images/siteicon.png" | absURL }}">
+  
+  <!-- Theme and PWA -->
+  <meta name="theme-color" content="{{ .Site.Params.theme_color | default "#2c3e50" }}">
+  <meta name="background-color" content="{{ .Site.Params.background_color | default "#ffffff" }}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="{{ i18n "site_title" . }}">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
+  
+  <!-- Language alternatives -->
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+  {{ end }}
+  
+  <!-- RSS Feed -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Modern CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4XO8+JEZJ+Jzbu4MnTt0uxfS2GkcRahZvc6/+z6nqr+ABF/l+9Qz8wmlNluAhCkTL9F7UG7SoYM2D0UjU71Qg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="{{ "css/default.css" | relURL }}">
+  
+  <!-- D3.js Library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+  <!-- Local JavaScript -->
+  <script src="{{ "js/translations.js" | relURL }}"></script>
+  <script src="{{ "js/stacked_ordinal_ratio.js" | relURL }}"></script>
+  <script src="{{ "js/default.js" | relURL }}" defer></script>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="{{ "images/favicon.ico" | relURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple_favicon.ico" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/siteicon.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "images/siteicon.png" | relURL }}">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ i18n "site_title" . }}",
+    "description": "{{ .Site.Params.site_description }}",
+    "url": "{{ .Site.BaseURL }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.site_author }}"
+    },
+    "inLanguage": "{{ .Site.Language.Lang }}"
+  }
+  </script>

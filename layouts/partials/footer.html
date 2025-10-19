@@ -1,0 +1,45 @@
+  </div> <!-- .main -->
+</main> <!-- .main-container -->
+
+<footer class="footer-container" role="contentinfo">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <p><strong>{{ i18n "last_updated" . }}:</strong> {{ .Date.Format "2006-01-02" }}</p>
+        <p>{{ i18n "copyright" . }}</p>
+      </div>
+      
+      {{ if .Site.Params.social }}
+      <div class="footer-section">
+        <h4>{{ i18n "follow_us" . | default "Follow Us" }}</h4>
+        <div class="social-links">
+          {{ if .Site.Params.social.github }}
+            <a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+              <span>GitHub</span>
+            </a>
+          {{ end }}
+          {{ if .Site.Params.social.twitter }}
+            <a href="{{ .Site.Params.social.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+              <span>Twitter</span>
+            </a>
+          {{ end }}
+          {{ if .Site.Params.social.linkedin }}
+            <a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      
+      <div class="footer-section">
+        <h4>{{ i18n "about_this_site" . }}</h4>
+        <p>{{ i18n "about_this_site_description" . }}</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>{{ .Site.Params.notice_copyright | default "Built with Hugo and love." }}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,49 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "button",
+      "div",
+      "footer",
+      "h1",
+      "h4",
+      "head",
+      "header",
+      "html",
+      "img",
+      "li",
+      "link",
+      "main",
+      "meta",
+      "nav",
+      "p",
+      "script",
+      "strong",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "back-to-top",
+      "fade-in",
+      "footer-bottom",
+      "footer-container",
+      "footer-content",
+      "footer-section",
+      "header-container",
+      "main",
+      "main-container",
+      "no-js",
+      "skip-link",
+      "title",
+      "wrapper"
+    ],
+    "ids": [
+      "back-to-top",
+      "chart",
+      "lang-selector",
+      "main-content",
+      "tooltip"
+    ]
+  }
+}

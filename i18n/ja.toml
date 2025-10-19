@@ -1,0 +1,57 @@
+
+[site_title]
+other = "Hugo i18n サイトテンプレート"
+
+[site_description]
+other = "多言語対応のHugoサイトテンプレート"
+
+[copyright]
+other = "Copyright 2024 Your Name. All rights reserved."
+
+[last_updated]
+other = "最終更新"
+
+[read_more]
+other = "続きを読む"
+
+[read_time]
+other = "分で読める"
+
+[tags]
+other = "タグ"
+
+[categories]
+other = "カテゴリ"
+
+[language_selector]
+other = "言語選択"
+
+[search_placeholder]
+other = "検索..."
+
+[back_to_top]
+other = "トップに戻る"
+
+[menu]
+other = "メニュー"
+
+[close]
+other = "閉じる"
+
+[home]
+other = "ホーム"
+
+
+[about_this_site]
+other = "このサイトについて"
+
+[about_this_site_description]
+other = "このサイトは多言語対応のHugoテンプレートです。日本語と英語の両方でコンテンツを提供しています。"
+
+
+[skip_to_content]
+other = "メインコンテンツにスキップ"
+
+[follow_us]
+other = "フォローする"
+

@@ -1,0 +1,57 @@
+
+[site_title]
+other = "Hugo i18n Site Template"
+
+[site_description]
+other = "Multilingual Hugo site template"
+
+[copyright]
+other = "Copyright 2024 Your Name. All rights reserved."
+
+[last_updated]
+other = "Last updated"
+
+[read_more]
+other = "Read more"
+
+[read_time]
+other = "min read"
+
+[tags]
+other = "Tags"
+
+[categories]
+other = "Categories"
+
+[language_selector]
+other = "Language"
+
+[search_placeholder]
+other = "Search..."
+
+[back_to_top]
+other = "Back to top"
+
+[menu]
+other = "Menu"
+
+[close]
+other = "Close"
+
+[home]
+other = "Home"
+
+
+[about_this_site]
+other = "About this site"
+
+[about_this_site_description]
+other = "This is a multilingual Hugo template that provides content in both Japanese and English."
+
+
+[skip_to_content]
+other = "Skip to main content"
+
+[follow_us]
+other = "Follow Us"
+

@@ -1,0 +1,31 @@
+<div class="header-container">
+  <header class="wrapper" role="banner">
+    <div class="title">
+      <a href="{{ "/" | relLangURL }}" aria-label="{{ i18n "back_to_top" . }}">
+        <img src="{{ "images/siteicon.png" | relURL }}" alt="{{ .Site.Title }}" width="40" height="40" />
+      </a>
+      <h1><a href="{{ "/" | relLangURL }}">{{ i18n "site_title" . }}</a></h1>
+    </div>
+    <nav role="navigation" aria-label="{{ i18n "menu" . }}">
+      <ul>
+        {{- $data := index $.Site.Data .Site.Language.Lang }}
+        {{- $menu := index $data.menu "nav_header" }}
+        {{- range $menu }}
+        <li><a href="{{ .url }}"{{ if eq $.RelPermalink .url }} aria-current="page"{{ end }}>{{ .name }}</a></li>
+        {{- end }}
+      </ul>
+      {{ if .IsTranslated }}
+        <div id="lang-selector" role="complementary" aria-label="{{ i18n "language_selector" . }}">
+          {{ range .Translations }}
+            <a href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}" aria-label="{{ i18n "language_selector" . }}: {{ .Language.LanguageName }}">
+              {{ .Language.LanguageName }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </nav>
+  </header>
+</div>
+
+<main class="main-container" role="main">
+  <div class="main wrapper">

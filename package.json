@@ -1,0 +1,47 @@
+{
+  "name": "hugo-i18nsite-template",
+  "version": "2.0.0",
+  "description": "A modern, multilingual Hugo site template with accessibility features and dark mode support",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server --buildDrafts --buildFuture --disableFastRender --bind 0.0.0.0",
+    "build": "hugo --minify --cleanDestinationDir",
+    "clean": "rm -rf public/ resources/_gen/ .hugo_build.lock",
+    "lint:css": "stylelint 'static/css/*.css'",
+    "lint:js": "eslint 'static/js/*.js'",
+    "lint": "npm run lint:css && npm run lint:js",
+    "format": "prettier --write 'static/css/*.css' 'static/js/*.js' 'layouts/**/*.html'",
+    "test": "echo 'No tests configured yet'",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "hugo",
+    "template",
+    "multilingual",
+    "i18n",
+    "accessibility",
+    "responsive",
+    "dark-mode",
+    "static-site"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hugo-i18nsite-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/hugo-i18nsite-template/issues"
+  },
+  "homepage": "https://github.com/yourusername/hugo-i18nsite-template#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

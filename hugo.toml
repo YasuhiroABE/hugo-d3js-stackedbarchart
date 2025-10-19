@@ -1,0 +1,54 @@
+# Hugo i18n Site Template Configuration
+# Modern Hugo configuration with improved structure and features
+
+baseURL = "http://localhost:1313/"
+title = "Hugo i18n Site Template"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+enableMissingTranslationPlaceholders = true
+
+# Security settings
+[security]
+  enableInlineShortcodes = true
+  [security.exec]
+    allow = ["^asciidoctor$", "^git$"]
+
+# Build settings
+[build]
+  writeStats = true
+  useResourceCacheWhen = "fallback"
+
+# Language configurations
+[languages]
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja"
+    weight = 1
+    [languages.ja.params]
+      site_description = "多言語対応のHugoサイトテンプレート"
+      site_author = "Your Name <your.email@example.com>"
+      site_keywords = "hugo, i18n, multilingual, template, japanese"
+      theme_color = "#2c3e50"
+      background_color = "#ffffff"
+      
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    [languages.en.params]
+      site_description = "Multilingual Hugo site template"
+      site_author = "Your Name <your.email@example.com>"
+      site_keywords = "hugo, i18n, multilingual, template, english"
+      theme_color = "#2c3e50"
+      background_color = "#ffffff"
+
+# Menu configurations
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+

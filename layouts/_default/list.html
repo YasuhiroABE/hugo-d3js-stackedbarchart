@@ -1,0 +1,73 @@
+{{ define "main" }}
+<!-- main content -->
+<div id="tooltip"></div>
+<div id="chart"></div>
+
+<script src="https://d3js.org/d3.v7.js"></script>
+<script src="{{ "js/stacked_ordinal_ratio.js" | relURL }}"></script>
+<script>
+  d3.json("data.json").then(function(data) {
+      const xzData = data.map( d => d.year );
+      const xzDomainSet = new d3.InternSet(xzData);
+      const xzDomain = Array.from(xzDomainSet);
+
+      const xData = data.map( d => d.id );
+      const xDomainSet = new d3.InternSet(xData);
+      const xDomain = Array.from(xDomainSet); // ["1-1-0", "1-2-0"]
+
+      // zDomainMap: {"1-1-0": [ "1-1-0-1", "1-1-0-2" ], "1-2-0": [ "1-2-0-1", "1-2-0-2" ] }
+      const zDomainSet = data.reduce( (acc, d) => {
+	  if(! acc[d.id]) {
+	      acc[d.id] = new Set();
+	  }
+	  acc[d.id].add(d.stack_id);
+	  return acc;
+      }, {});
+      const zDomainMap = Object.fromEntries(
+	  Object.entries(zDomainSet).map(([key, value]) => {
+	      // 値がSetのインスタンスであれば配列に変換、そうでなければそのまま
+	      const newValue = value instanceof Set ? [...value] : value;
+	      return [key, newValue];
+	  })
+      );
+
+      const chart = StackedRatioBarChart(d3.sort(data, d => d.year), {
+	  x: d => d.id,
+	  y: d => (d.answers / d.total).toFixed(1),
+	  z: d => d.stack_id,
+	  xz: d => d.year,
+	  xDomain: xDomain,
+	  zDomainMap: zDomainMap,
+	  xzDomain: xzDomain,
+	  yDoamin: [0, 1],
+	  yFormat: d3.format(".0%"),
+	  colors: d3.schemeSpectral[5],
+	  title: function(o,i,data) {
+	      return "ID:" + o.stack_id + "\n" +
+		  tr("year", "{{ .Site.LanguageCode }}") + ":" + o.year + "\n" +
+		  tr("total", "{{ .Site.LanguageCode }}") + ":" + o.total + "\n" +
+		  tr("answers", "{{ .Site.LanguageCode }}") + ":" + o.answers + "\n" +
+		  tr('ratio', "{{ .Site.LanguageCode }}") + ":" + ( (o.answers / o.total) * 100 ).toFixed(1) + "%";
+	  },
+	  width: 320,
+	  height: 320,
+      });
+      d3.select("#chart").append(() => chart);      
+  });
+  d3.select("#chart").on("click", function tooltip_toggle(event, d) {
+	if (event.target.tagName != "rect" && event.target.tagName != "circle") {
+	    d3.select("#tooltip").text("");
+	    return;
+	}
+	d3.select("#tooltip")
+	    .style("position", "absolute")
+	    .style("width", event.target.attributes.width + "px")
+	    .style("height", event.target.attributes.height + "px")
+	    .style("top", event.layerY + "px")
+	    .style("left", event.layerX + "px")
+	    .style("background-color", "white")
+	    .style("font-size", "12px")
+	    .text(event.target.innerHTML.replace(/<title>/g, "").replaceAll('</title>',""));
+    });
+</script>
+{{ end }}
