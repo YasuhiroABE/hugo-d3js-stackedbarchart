@@ -1,8 +1,8 @@
-# Hugo i18n Site Template Configuration
-# Modern Hugo configuration with improved structure and features
+# Hugo D3.js Stacked Bar Chart Demo Configuration
+# Modern Hugo configuration with D3.js data visualization features
 
 baseURL = "http://localhost:1313/"
-title = "Hugo i18n Site Template"
+title = "Hugo D3.js Stacked Bar Chart Demo"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
@@ -28,9 +28,9 @@ enableMissingTranslationPlaceholders = true
     languageCode = "ja"
     weight = 1
     [languages.ja.params]
-      site_description = "多言語対応のHugoサイトテンプレート"
+      site_description = "D3.jsスタック棒グラフデモの多言語対応Hugoサイト"
       site_author = "Your Name <your.email@example.com>"
-      site_keywords = "hugo, i18n, multilingual, template, japanese"
+      site_keywords = "hugo, d3js, データ可視化, スタック棒グラフ, 多言語, テンプレート, 日本語"
       theme_color = "#2c3e50"
       background_color = "#ffffff"
       
@@ -39,9 +39,9 @@ enableMissingTranslationPlaceholders = true
     languageCode = "en"
     weight = 2
     [languages.en.params]
-      site_description = "Multilingual Hugo site template"
+      site_description = "Multilingual Hugo site demonstrating D3.js stacked bar chart visualization"
       site_author = "Your Name <your.email@example.com>"
-      site_keywords = "hugo, i18n, multilingual, template, english"
+      site_keywords = "hugo, d3js, data visualization, stacked bar chart, multilingual, template, english"
       theme_color = "#2c3e50"
       background_color = "#ffffff"
 

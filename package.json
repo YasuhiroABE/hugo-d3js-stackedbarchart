@@ -1,7 +1,7 @@
 {
-  "name": "hugo-i18nsite-template",
+  "name": "hugo-d3js-stackedbarchart",
   "version": "2.0.0",
-  "description": "A modern, multilingual Hugo site template with accessibility features and dark mode support",
+  "description": "A modern, multilingual Hugo site demonstrating D3.js data visualization with stacked ordinal ratio bar charts",
   "main": "index.js",
   "scripts": {
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender --bind 0.0.0.0",
@@ -16,7 +16,9 @@
   },
   "keywords": [
     "hugo",
-    "template",
+    "d3js",
+    "data-visualization",
+    "stacked-bar-chart",
     "multilingual",
     "i18n",
     "accessibility",
@@ -28,12 +30,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/hugo-i18nsite-template.git"
+    "url": "https://github.com/YasuhiroABE/hugo-d3js-stackedbarchart.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/hugo-i18nsite-template/issues"
+    "url": "https://github.com/YasuhiroABE/hugo-d3js-stackedbarchart/issues"
   },
-  "homepage": "https://github.com/yourusername/hugo-i18nsite-template#readme",
+  "homepage": "https://github.com/YasuhiroABE/hugo-d3js-stackedbarchart#readme",
   "devDependencies": {
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
