@@ -8,6 +8,14 @@ A modern, multilingual Hugo site demonstrating D3.js data visualization with a c
 - **D3.js Data Visualization**: Interactive stacked ordinal ratio bar chart with custom implementation
 - **Multilingual Support**: Japanese and English with easy language switching
 
+### Multilingual Support
+
+The site supports both Japanese and English languages. Users can switch between languages using the provided toggle button.
+
+The D3.js chart tooltips and labels are localized based on the selected language.
+
+The basic structure is derived from the [github.com/YasuhiroABE/hugo-i18nsite-template](https://github.com/YasuhiroABE/hugo-i18nsite-template) project.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -112,25 +120,27 @@ Each content file supports:
 
 ## 📄 License
 
-Copyright 2024 Yasuhiro ABE <yasu@yasundial.org>
+Unless otherwise specified, the following license applies.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    Copyright 2024 Yasuhiro ABE <yasu@yasundial.org>
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+        http://www.apache.org/licenses/LICENSE-2.0
 
-### D3.js License
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
-The D3.js library is licensed under the ISC License.
+### D3.js License Terms
 
-The `stacked_ordinal_ratio.js` function is based on the original D3.js stacked bar chart example and follows the same licensing terms.
+The d3.js library is licensed under the ISC License.
+
+The `stacked_ordinal_ratio.js` function is based on the original stacked bar chart example and follows the same licensing terms.
 
 ## 🛠️ Development Process & Tooling
 
