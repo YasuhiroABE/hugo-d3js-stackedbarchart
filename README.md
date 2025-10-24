@@ -20,8 +20,7 @@ The basic structure is derived from the [github.com/YasuhiroABE/hugo-i18nsite-te
 
 ### Prerequisites
 
-- [Hugo Extended](https://gohugo.io/installation/) (v0.100.0 or later)
-- [AsciiDoctor](https://asciidoctor.org/) (for AsciiDoc support)
+- [Hugo Extended](https://gohugo.io/installation/) (v0.151.2 or later)
 - Modern web browser with JavaScript enabled
 
 ### Installation

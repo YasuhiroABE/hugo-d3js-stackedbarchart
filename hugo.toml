@@ -14,7 +14,7 @@ enableMissingTranslationPlaceholders = true
 [security]
   enableInlineShortcodes = true
   [security.exec]
-    allow = ["^asciidoctor$", "^git$"]
+    allow = ["^git$"]
 
 # Build settings
 [build]
