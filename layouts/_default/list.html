@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-- main content -->
-<div id="tooltip"></div>
+<div id="tooltip" style="display:none;"></div>
 <div id="chart"></div>
 
 <script src="https://d3js.org/d3.v7.js"></script>
@@ -56,10 +56,10 @@
   });
   d3.select("#chart").on("click", function tooltip_toggle(event, d) {
 	if (event.target.tagName != "rect" && event.target.tagName != "circle") {
-	    d3.select("#tooltip").text("");
+            d3.select("#tooltip").text("").style('display', 'none');
 	    return;
 	}
-	d3.select("#tooltip")
+	d3.select("#tooltip").style('display', 'block')
 	    .style("position", "absolute")
 	    .style("width", event.target.attributes.width + "px")
 	    .style("height", event.target.attributes.height + "px")
