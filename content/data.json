@@ -1,191 +1,191 @@
 [
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-1",
+	"id":"CA",
+	"stack_id":"CA-1",
 	"year":"AY2023",
 	"total":10,
 	"answers":1,
 	"selection":"1"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-1",
+	"id":"CA",
+	"stack_id":"CA-1",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"1"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-1",
+	"id":"CA",
+	"stack_id":"CA-1",
 	"year":"AY2025",
 	"total":10,
 	"answers":3,
 	"selection":"1"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-2",
+	"id":"CA",
+	"stack_id":"CA-2",
 	"year":"AY2023",
 	"total":10,
 	"answers":6,
 	"selection":"2"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-2",
+	"id":"CA",
+	"stack_id":"CA-2",
 	"year":"AY2024",
 	"total":10,
 	"answers":6,
 	"selection":"2"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-2",
+	"id":"CA",
+	"stack_id":"CA-2",
 	"year":"AY2025",
 	"total":10,
 	"answers":6,
 	"selection":"2"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-3",
+	"id":"CA",
+	"stack_id":"CA-3",
 	"year":"AY2023",
 	"total":10,
 	"answers":3,
 	"selection":"3"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-3",
+	"id":"CA",
+	"stack_id":"CA-3",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"3"
     },
     {
-	"id":"1-1-0",
-	"stack_id":"1-1-0-3",
+	"id":"CA",
+	"stack_id":"CA-3",
 	"year":"AY2025",
 	"total":10,
 	"answers":1,
 	"selection":"3"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-1",
+	"id":"TX",
+	"stack_id":"TX-1",
 	"year":"AY2023",
 	"total":10,
 	"answers":2,
 	"selection":"1"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-1",
+	"id":"TX",
+	"stack_id":"TX-1",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"1"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-1",
+	"id":"TX",
+	"stack_id":"TX-1",
 	"year":"AY2025",
 	"total":10,
 	"answers":2,
 	"selection":"1"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-2",
+	"id":"TX",
+	"stack_id":"TX-2",
 	"year":"AY2023",
 	"total":10,
 	"answers":2,
 	"selection":"2"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-2",
+	"id":"TX",
+	"stack_id":"TX-2",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"2"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-2",
+	"id":"TX",
+	"stack_id":"TX-2",
 	"year":"AY2025",
 	"total":10,
 	"answers":2,
 	"selection":"2"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-3",
+	"id":"TX",
+	"stack_id":"TX-3",
 	"year":"AY2023",
 	"total":10,
 	"answers":2,
 	"selection":"3"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-3",
+	"id":"TX",
+	"stack_id":"TX-3",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"3"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-3",
+	"id":"TX",
+	"stack_id":"TX-3",
 	"year":"AY2025",
 	"total":10,
 	"answers":2,
 	"selection":"3"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-4",
+	"id":"TX",
+	"stack_id":"TX-4",
 	"year":"AY2023",
 	"total":10,
 	"answers":2,
 	"selection":"4"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-4",
+	"id":"TX",
+	"stack_id":"TX-4",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"4"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-4",
+	"id":"TX",
+	"stack_id":"TX-4",
 	"year":"AY2025",
 	"total":10,
 	"answers":2,
 	"selection":"4"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-5",
+	"id":"TX",
+	"stack_id":"TX-5",
 	"year":"AY2023",
 	"total":10,
 	"answers":2,
 	"selection":"5"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-5",
+	"id":"TX",
+	"stack_id":"TX-5",
 	"year":"AY2024",
 	"total":10,
 	"answers":2,
 	"selection":"2"
     },
     {
-	"id":"1-2-0",
-	"stack_id":"1-2-0-5",
+	"id":"TX",
+	"stack_id":"TX-5",
 	"year":"AY2025",
 	"total":10,
 	"answers":2,
